@@ -17,7 +17,7 @@ get_header(); ?>
 
 
 <h3 id="header"
-    style="padding-top: 200px;">Idex Page - WP wyk. dla wyświetlania szablonu wpisu jeżeli brakuje temlate</h3>
+    style="padding-top: 200px;">Idex PHP File - WP wyk. dla wyświetlania szablonu wpisu jeżeli brakuje temlate</h3>
 
 
 <?php get_footer(); ?>
