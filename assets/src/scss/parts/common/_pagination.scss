@@ -1,0 +1,56 @@
+// pagination START
+// .pagination > *:first-child {
+//     border-radius: 0.3em 0 0 0.3em;
+// }
+
+.pagination a {
+  display: inline-block;
+
+  vertical-align: middle;
+
+  text-align: center;
+
+  width: 2.4em;
+
+  height: 2.4em;
+
+  line-height: 2.4em;
+
+  margin: 0 1px 1px 0;
+
+  background: var(--main-color-theme);
+
+  color: var(--main-color-text);
+
+  transition: all 0.1s;
+
+  text-decoration: none;
+
+  border: 1px solid var(--main-color-text);
+}
+
+.pagination span {
+  display: inline-block;
+
+  vertical-align: middle;
+
+  border: 1px solid var(--main-color-text);
+
+  text-align: center;
+
+  width: 2.4em;
+
+  height: 2.4em;
+
+  line-height: 2.5em;
+
+  margin: 0 1px 1px 0;
+
+  background: var(--main-color-text);
+
+  color: var(--main-color-theme);
+
+  transition: all 0.1s;
+
+  text-decoration: none;
+}

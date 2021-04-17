@@ -1,0 +1,52 @@
+.product__card {
+        position: relative;
+        display: block;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: $black;
+        &:hover {
+            color: $black;
+        }
+        &:focus {
+            outline: 0px;
+        }
+        .product {
+            &__img {
+                margin-bottom: 15px;
+                img {
+                    max-height: 520px;
+                }
+            }
+
+            &__info {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+            &__name {
+                font-size: 18px;
+            }
+            &__price   {
+                font-size: 25px;
+            }
+            &__options {
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                height: 25%;
+                width: 100%;
+                opacity: 0.6;
+                background-color: $white;
+            }
+            &__sizes {
+
+            }
+            &__colors {
+
+            }
+            &__wishlist {
+
+            }
+        }
+
+}

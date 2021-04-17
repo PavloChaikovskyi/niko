@@ -1,0 +1,16 @@
+// auto-resizing fonts
+html {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 400px) {
+  html {
+    font-size: calc(15px + 5 * ((100vw - 400px) / 1000));
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 20px;
+  }
+}

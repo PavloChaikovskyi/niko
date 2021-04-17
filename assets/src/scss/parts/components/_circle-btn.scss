@@ -1,0 +1,24 @@
+.btn {
+    &__circle {
+                &:hover svg path {
+                    fill: $main;
+                }
+                &:hover svg path.circle {
+                    transform: rotateX(180deg);
+                }
+            svg {
+                max-width: 45px;
+                max-height: 45px;
+                path {
+                    transition: .3s;
+                    fill: $black;
+                    &.circle {
+                        transform-origin: center;
+                    }
+                }
+            }
+
+    }
+}
+
+// looking for efect to dealay sibling transition until one finish
