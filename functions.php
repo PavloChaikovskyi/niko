@@ -14,7 +14,7 @@ require_once 'class-wp-bootstrap-navwalker.php';
 
 
 register_nav_menus( array(
-	'primary_top' => __( 'Primary Menu Top', 'nikolink' ),
+	'primary' => __( 'Primary Menu Top', 'nikolink' ),
 ) );
 
 
@@ -63,7 +63,5 @@ function add_stylesheets_and_scripts()
 }
 add_action('wp_enqueue_scripts', 'add_stylesheets_and_scripts'); 
 
-
-
-
+add_filter('doing_it_wrong_trigger_error', function () {return false;}, 10, 0);
 ?>
