@@ -115,7 +115,7 @@ $('.intro__slider').slick({
         </div>
     </div>
 </section>
-<!-- 
+
 <section class="b2b">
     <div class="container-fluid">
         <div class="row mx-0">
@@ -124,7 +124,7 @@ $('.intro__slider').slick({
                     alt=""
                     class="b2b__img">
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7 form">
                 <h2 class="b2b__title"><?php the_field('b2b_title') ?></h2>
                 <div class="b2b__subtitle"><?php the_field('b2b_description') ?></div>
                 <div class="b2b__form">
@@ -135,6 +135,7 @@ $('.intro__slider').slick({
     </div>
 </section>
 
+<!-- 
 <section class="prepearing">
     <div class="container small">
         <h2 class="section__title prepearing__title white"><?php the_field('prepearing_title') ?></h2>
