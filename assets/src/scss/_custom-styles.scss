@@ -156,3 +156,68 @@ a {
         }
     }
 }
+
+.shops {
+        background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(74, 80, 94, 1) 0%, rgba(30, 30, 42, 1) 100%);
+        &__title {
+            color: $white;
+        }
+
+        .row {
+            align-items: center;
+        }
+
+        .shop {
+            &__link {
+                svg {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+        // olx
+        path#olx-logo-vector-2 {
+            fill: #fff;
+            &:hover {
+                fill: rgb(36, 229, 219);
+            }
+        }
+
+        // alegro 
+        path#Allegro\.pl_sklep-2 {
+            fill: #fff;
+            &:hover {
+                fill: rgb(255, 90, 0);
+            }
+        }
+
+        // amazon 
+        // path#path8-2 {
+        //     fill: #FFF;
+        // }
+        // path#path10-2 {
+        //     fill: #fff;
+        // }
+        // path#path12-2 {
+        //     fill: #fff;
+        // }
+        // path#path14-2 {
+        //     fill: #fff;
+        // }
+
+        g#Amazon_logo-2 path {
+            fill: #fff;
+            &:hover {
+                fill: initial;
+            }
+        }
+
+        // facebook
+        path#facebook {
+            fill: white;
+        }
+        ellipse#Ellipse_26 {
+            fill: black;
+        }
+
+}

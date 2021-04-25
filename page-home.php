@@ -91,10 +91,10 @@ $('.intro__slider').slick({
         </div>
     </div>
 </section>
-<!-- 
+
 <section class="shops">
     <div class="container">
-        <h2 class="section__title pruducts__title dark"><?php the_field('our_shops_title') ?></h2>
+        <h2 class="section__title shops__title dark"><?php the_field('our_shops_title') ?></h2>
         <div class="row mx-0">
             <?php 
             $shops = get_field('our_shops');
@@ -115,7 +115,7 @@ $('.intro__slider').slick({
         </div>
     </div>
 </section>
-
+<!-- 
 <section class="b2b">
     <div class="container-fluid">
         <div class="row mx-0">
