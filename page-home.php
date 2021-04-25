@@ -135,7 +135,7 @@ $('.intro__slider').slick({
     </div>
 </section>
 
-<!-- 
+
 <section class="prepearing">
     <div class="container small">
         <h2 class="section__title prepearing__title white"><?php the_field('prepearing_title') ?></h2>
@@ -166,6 +166,8 @@ $('.intro__slider').slick({
         </div>
     </div>
 </section>
+
+<!-- 
 
 <section class="brands">
     <div class="container-fluid">

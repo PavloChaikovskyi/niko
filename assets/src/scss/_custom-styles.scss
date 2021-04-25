@@ -231,3 +231,38 @@ a {
         }
     }
 }
+
+.prepearing {
+        background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(74, 80, 94, 1) 0%, rgba(30, 30, 42, 1) 100%);
+        h2, h3 {
+            max-width: 800px;
+            text-align: center;
+            display: block;
+            
+        }
+        &__title {
+            color: $white;
+            margin: 0 auto;
+            margin-bottom: 2.5rem;
+        }
+        &__subtitle {
+            color: $white;
+            margin: 0 auto;
+            margin-bottom: 7.5rem;
+        }
+        .step {
+            &__link {
+                display: block;
+                margin-bottom: 8rem;
+            }
+            &__icon {
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 1.5rem;
+            }
+            &__name {
+                color: $white;
+                text-align: center;
+            }
+        }
+}
