@@ -56,7 +56,8 @@ $('.intro__slider').slick({
     infinite: true,
     speed: 300,
     slidesToShow: 1,
-    adaptiveHeight: false
+    adaptiveHeight: false,
+    autoplay: true,
 });
 </script>
 
@@ -167,7 +168,6 @@ $('.intro__slider').slick({
     </div>
 </section>
 
-<!-- 
 
 <section class="brands">
     <div class="container-fluid">
@@ -190,6 +190,19 @@ $('.intro__slider').slick({
     </div>
 </section>
 
+<script>
+$('.brands__slider').slick({
+    arrows: true,
+    adaptiveHeight: true,
+    // dots: true,
+    // speed: 300,
+    slidesToShow: 4,
+    adaptiveHeight: false,
+    autoplay: true,
+});
+</script>
+
+<!-- 
 <section class="about">
     <div class="container-fluid">
         <h2 class="section__title about__title white"><?php the_field('about_us_title') ?></h2>
