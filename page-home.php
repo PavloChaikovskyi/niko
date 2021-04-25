@@ -27,7 +27,7 @@ get_header();
             <?php 
             $introSlider = get_field('intro_slider');
             if( $introSlider  ) { ?>
-            <div class="col-md-6 intro__slider">
+            <div class="col-md-6">
                 <div class="intro__slider">
                     <?php foreach($introSlider as $slide) { 
                         $slideLink = ["intro_slider_link"]; 
@@ -48,6 +48,17 @@ get_header();
         </div>
     </div>
 </section>
+
+<script>
+$('.intro__slider').slick({
+    arrows: false,
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: false
+});
+</script>
 
 <section class="products">
     <div class="container small">
@@ -80,7 +91,7 @@ get_header();
         </div>
     </div>
 </section>
-
+<!-- 
 <section class="shops">
     <div class="container">
         <h2 class="section__title pruducts__title dark"><?php the_field('our_shops_title') ?></h2>
@@ -192,7 +203,7 @@ get_header();
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 
 

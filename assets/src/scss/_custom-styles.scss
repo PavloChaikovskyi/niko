@@ -1,10 +1,99 @@
-@import "./parts/basic/fonts";
-@import "./parts/basic/utilities";
-@import "./parts/basic/general";
-@import "./parts/common/section";
-@import "./parts/header/header";
-@import "./parts/footer/footer";
-@import "./parts/pages/home/intro/home-intro";
-@import "./parts/pages/home/info/home-info";
-@import "./parts/components/product-card";
-@import "./parts/common/products-slider";
+@import "../bootstrap/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+// font-family: 'Lato', sans-serif;
+
+
+// auto-resizing fonts
+html {
+    font-size: 15px;
+}
+
+@media screen and (min-width: 400px) {
+    html {
+        font-size: calc(15px + 5 * ((100vw - 400px) / 1000));
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+
+
+.navbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    font-family: $lato;
+}
+
+.container {
+    max-width: 85vw;
+    &.small {
+        min-width: 80vw;
+    }
+}
+
+
+.btn {
+    font-size: 1rem;
+    color: $white;
+    padding: 1.25rem 1.5rem;
+    transition: .3s;
+    background: radial-gradient(circle, rgba(13, 68, 105, 1) 0%, rgba(72, 160, 78, 1) 100%);
+    border-radius: 25px;
+    &:hover {
+    background-position: 100px;
+    color: $white;
+    text-decoration: none;
+    }
+}
+
+.intro {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(74, 80, 94, 1) 0%, rgba(30, 30, 42, 1) 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__title {
+        color: $white;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 3.5rem;
+    }
+    &__subtitle {
+        font-size: 1rem;
+        color: $white;
+        margin-bottom: 5rem;
+    }
+}
+
+.slider {
+&__img {
+    margin: 0 auto;
+    max-height: 460px;
+}
+&__item {
+    display: block;
+}
+}
+
+
+// slider
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    button {
+        display: none;
+    }
+    li {
+        width: 20px;
+        height: 20px;
+        
+    }
+}
