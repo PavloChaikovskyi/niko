@@ -202,7 +202,7 @@ $('.brands__slider').slick({
 });
 </script>
 
-<!-- 
+
 <section class="about">
     <div class="container-fluid">
         <h2 class="section__title about__title white"><?php the_field('about_us_title') ?></h2>
@@ -219,7 +219,7 @@ $('.brands__slider').slick({
             </div>
         </div>
     </div>
-</section> -->
+</section>
 
 
 

@@ -286,3 +286,29 @@ a {
     }
 
 }
+
+.about {
+            background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(74, 80, 94, 1) 0%, rgba(30, 30, 42, 1) 100%);
+            color: $white;
+            &__title {
+
+            }
+            &__subtitle {
+
+                text-align: center;
+                font-size: 1rem;
+            }
+            .content {
+                &__title {
+                    padding-top: 7rem;
+                    margin-bottom: 3rem;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+
+                }
+                &__text {
+                    max-width: 850px;
+                    font-size: 1rem;
+                }
+            }
+}
