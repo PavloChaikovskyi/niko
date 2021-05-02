@@ -8,11 +8,11 @@ get_header();
 
 <?php the_field('') ?>
 
-<!-- <section class="welcome">
-    <img src="<?php// the_field('big_logo') ?>"
+<section class="welcome">
+    <img src="<?php the_field('big_logo') ?>"
         alt=""
         class="welcome__img">
-</section> -->
+</section>
 
 <section id="intro"
     class="intro">
@@ -64,7 +64,7 @@ $('.intro__slider').slick({
 <section class="products">
     <div class="container small">
 
-        <h2 class="section__title pruducts__title dark"><?php the_field('our_products_title') ?></h2>
+        <h2 class="section__title products__title dark"><?php the_field('our_products_title') ?></h2>
         <div class="row mx-0">
 
             <?php 
@@ -137,13 +137,13 @@ $('.intro__slider').slick({
 </section>
 
 
-<section class="prepearing">
+<section class="preparing">
     <div class="container small">
-        <h2 class="section__title prepearing__title white"><?php the_field('prepearing_title') ?></h2>
-        <h3 class="section__subtitle prepearing__subtitle"><?php the_field('prepearing_subtitle') ?></h3>
-        <div class="row mx-0 prepearing__steps">
+        <h2 class="section__title preparing__title white"><?php the_field('prepearing_title') ?></h2>
+        <h3 class="section__subtitle preparing__subtitle"><?php the_field('prepearing_subtitle') ?></h3>
+        <div class="row mx-0 preparing__steps">
             <?php 
-            $steps = get_field('prepearing_steps'); 
+            $steps = get_field('preparing_steps'); 
             if ( $steps ) {
             foreach($steps as $step) { 
                 $stepIcon = $step['step_icon'];

@@ -23,7 +23,7 @@
 
             <div class="col-md-3">
                 <a href="tel:<?php the_field('company_phone_number_without_spaces', 'options') ?>"
-                    class="footer__link">
+                    class="footer__link phone">
                     <img src="<?php the_field('company_number_icon', 'options') ?>"
                         alt=""
                         class="phone__icon footer__icon">
@@ -38,19 +38,19 @@
                 </a>
             </div>
             <div class="col-md-3">
-                <a href="<?php the_field('', 'options') ?>"
-                    class="rodo footer__link"><?php the_field('', 'options') ?></a>
-                <a href="<?php the_field('', 'options') ?>"
+                <a href="<?php the_field('rodo_link', 'options') ?>"
+                    class="rodo footer__link"><?php the_field('rodo_text', 'options') ?></a>
+                <a href="<?php the_field('privacy_policy_link', 'options') ?>"
                     class="privacy-policy footer__link">
-                    <?php the_field('', 'options') ?> </a>
+                    <?php the_field('privacy_policy_text', 'options') ?> </a>
             </div>
         </div>
     </div>
     <div class="container copyright">
         <div class="row mx-0">
             <div class="col-md-6">Copyright Nikolink 2021</div>
-            <div class="col-md-6">Project i realizacja - <a href="/"
-                    class="copyrights__link">Web Studio Czajkowski</a></div>
+            <div class="col-md-6 realization">Project i realizacja - <a href="/"
+                    class="copyrights__link">codusa.space</a></div>
         </div>
     </div>
 </footer>

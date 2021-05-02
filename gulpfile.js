@@ -55,7 +55,7 @@ function clean() {
 }
 
 function watch() {
-    browserSync.init({ proxy: 'http://localhost:8888/nikolink/web', online: true })
+    browserSync.init({ proxy: 'http://nikolink.local/web', online: true })
     scssWatcher.on('change', styles)
     phpWatcher.on('change', browserSync.reload)
     scriptsWatcher.on('change', browserSync.reload)
