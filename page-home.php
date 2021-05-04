@@ -104,13 +104,13 @@ $('.intro__slider').slick({
     </div>
 </section>
 
-<section class="b2b d-none">
+<section class="b2b">
     <div class="container-fluid">
         <div class="row mx-0">
-            <div class="col-md-5">
+            <div class="col-md-5 img__wrap">
                 <img src="<?php the_field('b2b_image') ?>" alt="" class="b2b__img">
             </div>
-            <div class="col-md-7 form">
+            <div class="col-lg-7 form">
                 <h2 class="b2b__title"><?php the_field('b2b_title') ?></h2>
                 <div class="b2b__subtitle"><?php the_field('b2b_description') ?></div>
                 <div class="b2b__form">
