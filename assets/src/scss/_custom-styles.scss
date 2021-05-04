@@ -45,6 +45,8 @@ body::-webkit-scrollbar {
         font-size: 20px;
     }
 }
+
+
 .col-md-2,
 .col-md-3,
 .col-md-4,
@@ -579,6 +581,8 @@ li.slick-active::marker {
                 } 
             }
         }
+
+
         &__icon {
             margin-bottom: 1.5rem;
             visibility: visible;
@@ -610,6 +614,9 @@ li.slick-active::marker {
 
 .shops {
         background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(74, 80, 94, 1) 0%, rgba(30, 30, 42, 1) 100%);
+        @media(max-width: 576px) {
+            padding-bottom: 0;
+        }
         &__title {
             color: $white;
         }
@@ -620,13 +627,49 @@ li.slick-active::marker {
 
         .shop {
             &__link {
+                position: relative;
+                transition: .3s;
+                @media(max-width: 840px) {
+                    margin-bottom: 4.5rem;
+                }
+                &:hover {
+                    .shop__icon {
+                        opacity: 0;
+                    }
+                    .shop__icon.hover {
+                        opacity: 1;
+                    }
+                }
                 svg {
                     display: block;
                     margin: 0 auto;
+
                 }
                 img {
                     display: block;
                     margin: 0 auto;
+                    transition: .3s;
+                }
+            }
+            &__icon {
+                opacity: 1;
+                @media(max-width: 1450px) {
+                    max-width: 15vw;
+                    max-height: 100px;
+                }
+                @media(max-width: 840px) {
+                    max-width: 150px;
+                    max-height: 100px;
+                }
+                @media(max-width: 576px) {
+                    max-height: 70px;
+                }
+                &.hover {
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translate(-50%);
+                    opacity: 0;
                 }
             }
         }

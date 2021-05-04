@@ -90,10 +90,12 @@ $('.intro__slider').slick({
             if( $shops ) { ?>
             <?php foreach($shops as $shop) {  
                 $shopIcon = $shop["shop_icon_in_color"];
+                $shopIconWhite = $shop["shop_icon_white"];
                 $shopLink = $shop["shop_link"];
             ?>
             <a href="<?php echo $shopLink  ?>" class="shop__link col-md-3">
-                <img src="<?php echo $shopIcon ?>" alt="" class="shop__icon">
+                <img src="<?php echo $shopIcon ?>" alt="" class="shop__icon hover">
+                <img src="<?php echo $shopIconWhite ?>" alt="" class="shop__icon ">
             </a>
 
             <?php } ?>
