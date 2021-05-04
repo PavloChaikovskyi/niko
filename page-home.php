@@ -9,46 +9,39 @@ get_header();
 <?php the_field('') ?>
 
 <section class="welcome">
-    <img src="<?php the_field('big_logo') ?>"
-        alt=""
-        class="welcome__img">
+    <img src="<?php the_field('big_logo') ?>" alt="" class="welcome__img">
 </section>
 
-<section id="intro"
-    class="intro">
+
+<section id="intro" class="intro">
     <div class="container">
-        <div class="row mx-0">
+        <div class="row intro__row mx-0">
             <div class="col-md-6 intro__content">
-                <h1 class="intro__title"><?php the_field('intro_title') ?></h1>
+                <h1 class="intro__title section__title"><?php the_field('intro_title') ?></h1>
                 <h2 class="intro__subtitle"><?php the_field('intro_subtitle') ?></h2>
-                <a href="<?php the_field('intro_button_linkc') ?>"
+                <a href="<?php the_field('intro_button_link') ?>"
                     class="btn intro__btn"><?php the_field('intro_button_text') ?></a>
             </div>
             <?php 
-            $introSlider = get_field('intro_slider');
-            if( $introSlider  ) { ?>
-            <div class="col-md-6">
+                        $introSlider = get_field('intro_slider');
+                        if( $introSlider ) { ?>
+            <div class="col-md-6 slider__column">
                 <div class="intro__slider">
                     <?php foreach($introSlider as $slide) { 
-                        $slideLink = ["intro_slider_link"]; 
-                        $slideImage = $slide["intro_slider_image"]; 
-                        $sliderText = $slide["intro_slider_text"];  ?>
-                    <a href="<?php echo $slideLink ?>"
-                        class="slider__item">
-                        <img src="<?php echo $slideImage ?>"
-                            alt=""
-                            class="slider__img">
+
+                                    $slideLink = $slide["intro_slider_link"]; 
+                                    $slideImage = $slide["intro_slider_image"]; 
+                                    $sliderText = $slide["intro_slider_text"];  ?>
+                    <a href="<?php echo $slideLink ?>" class="slider__item">
+                        <img src="<?php echo $slideImage ?>" alt="" class="slider__img">
                     </a>
                     <?php } ?>
                 </div>
             </div>
             <?php } ?>
-
-
         </div>
     </div>
 </section>
-
 <script>
 $('.intro__slider').slick({
     arrows: false,
@@ -76,14 +69,9 @@ $('.intro__slider').slick({
                     $productIconHover = $product["product_hover_image"];
                     $productName = $product["product_name"];
                     $productDescription = $product["product_hover_description"];  ?>
-            <a href="<?php echo $productLink ?>"
-                class="product__card col-md-4">
-                <img src="<?php echo $productIcon ?>"
-                    alt=""
-                    class="product__icon">
-                <img src="<?php echo $productIconHover ?>"
-                    alt=""
-                    class="product__icon hover">
+            <a href="<?php echo $productLink ?>" class="product__card col-md-4">
+                <img src="<?php echo $productIcon ?>" alt="" class="product__icon">
+                <img src="<?php echo $productIconHover ?>" alt="" class="product__icon hover">
                 <p class="product__name"><?php echo $productName ?></p>
                 <p class="product__description hover"><?php echo $productDescription ?></p>
             </a>
@@ -104,11 +92,8 @@ $('.intro__slider').slick({
                 $shopIcon = $shop["shop_icon_in_color"];
                 $shopLink = $shop["shop_link"];
             ?>
-            <a href="<?php echo $shopLink  ?>"
-                class="shop__link col-md-3">
-                <img src="<?php echo $shopIcon ?>"
-                    alt=""
-                    class="shop__icon">
+            <a href="<?php echo $shopLink  ?>" class="shop__link col-md-3">
+                <img src="<?php echo $shopIcon ?>" alt="" class="shop__icon">
             </a>
 
             <?php } ?>
@@ -117,13 +102,11 @@ $('.intro__slider').slick({
     </div>
 </section>
 
-<section class="b2b">
+<section class="b2b d-none">
     <div class="container-fluid">
         <div class="row mx-0">
             <div class="col-md-5">
-                <img src="<?php the_field('b2b_image') ?>"
-                    alt=""
-                    class="b2b__img">
+                <img src="<?php the_field('b2b_image') ?>" alt="" class="b2b__img">
             </div>
             <div class="col-md-7 form">
                 <h2 class="b2b__title"><?php the_field('b2b_title') ?></h2>
@@ -152,14 +135,11 @@ $('.intro__slider').slick({
                 $stepLink = $step['step_link'];
             
             if ( $stepAsLink ) { ?>
-            <a href="<?php echo $stepLink  ?>"
-                class="step__link col-md-4">
+            <a href="<?php echo $stepLink  ?>" class="step__link col-md-4">
                 <?php } else { ?>
                 <a class="step__link col-md-4">
                     <?php } ?>
-                    <img src="<?php echo $stepIcon  ?>"
-                        alt=""
-                        class="step__icon">
+                    <img src="<?php echo $stepIcon  ?>" alt="" class="step__icon">
                     <p class="step__name"><?php echo $stepName  ?></p>
                 </a>
 
@@ -180,9 +160,7 @@ $('.intro__slider').slick({
                 $brandLogo =  $brand['brand_logo'];
                 $brandLink =  $brand['brand_link'];
             ?>
-            <a href="<?php echo $brandLink  ?>"
-                class="brand__link"><img src="<?php echo $brandLogo ?>"
-                    alt=""
+            <a href="<?php echo $brandLink  ?>" class="brand__link"><img src="<?php echo $brandLogo ?>" alt=""
                     class="brand__logo"></a>
             <?php } ?>
             <?php } ?>
@@ -213,9 +191,7 @@ $('.brands__slider').slick({
                 <p class="content__text"><?php the_field('about_content_description') ?></p>
             </div>
             <div class="col-md-5">
-                <img src="<?php the_field('about_img') ?>"
-                    alt=""
-                    class="about__img">
+                <img src="<?php the_field('about_img') ?>" alt="" class="about__img">
             </div>
         </div>
     </div>
