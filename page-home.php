@@ -28,7 +28,6 @@ get_header();
             <div class="col-md-6 slider__column">
                 <div class="intro__slider">
                     <?php foreach($introSlider as $slide) { 
-
                                     $slideLink = $slide["intro_slider_link"]; 
                                     $slideImage = $slide["intro_slider_image"]; 
                                     $sliderText = $slide["intro_slider_text"];  ?>
@@ -42,6 +41,7 @@ get_header();
         </div>
     </div>
 </section>
+
 <script>
 $('.intro__slider').slick({
     arrows: false,
@@ -56,7 +56,6 @@ $('.intro__slider').slick({
 
 <section class="products">
     <div class="container small">
-
         <h2 class="section__title products__title dark"><?php the_field('our_products_title') ?></h2>
         <div class="row mx-0">
 
@@ -128,7 +127,7 @@ $('.intro__slider').slick({
         <h3 class="section__subtitle preparing__subtitle"><?php the_field('prepearing_subtitle') ?></h3>
         <div class="row mx-0 preparing__steps">
             <?php 
-            $steps = get_field('preparing_steps'); 
+            $steps = get_field('prepearing_steps');
             if ( $steps ) {
             foreach($steps as $step) { 
                 $stepIcon = $step['step_icon'];
