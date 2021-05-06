@@ -151,7 +151,7 @@ $('.intro__slider').slick({
 
 
 <section class="brands">
-    <div class="container-fluid">
+    <div class="container">
         <h2 class="section__title brands__title black"><?php the_field('brands_title') ?></h2>
         <div class="brands__slider">
             <?php 
@@ -178,6 +178,37 @@ $('.brands__slider').slick({
     slidesToShow: 4,
     adaptiveHeight: false,
     autoplay: true,
+    responsive: [{
+            breakpoint: 991,
+            settings: {
+                arrows: false,
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
 });
 </script>
 
