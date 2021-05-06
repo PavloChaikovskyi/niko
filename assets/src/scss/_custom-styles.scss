@@ -341,12 +341,6 @@ a.nav-link {
 }
 
 
-
-
-
-
-
-
 body {
     margin: 0;
     font-family: $lato;
@@ -1102,7 +1096,7 @@ li.slick-active::marker {
             left: 0;
             height: 60px;
             width: 80px;
-            transform: translate(-100%, -50%);
+            transform: translate(-80%, -50%);
             border: none;
             outline: none;
             background-color: transparent;
@@ -1122,7 +1116,7 @@ li.slick-active::marker {
             right: 0;
             height: 60px;
             width: 80px;
-            transform: translate(100%, -50%);
+            transform: translate(80%, -50%);
             border: none;
             outline: none;
             background-color: transparent;
@@ -1202,10 +1196,20 @@ li.slick-active::marker {
 }
 
 .footer {
+    &__logo {
+        @media(max-width: 1200px) {
+            margin-bottom: 3rem;
+        }
+    }
     .container {
         &.content {
             padding-top: 4rem;
             padding-bottom: 4rem;
+        }
+    }
+    &__column {
+        @media(max-width: 767px) {
+            margin-bottom: 3rem;
         }
     }
     &__link {
@@ -1236,8 +1240,14 @@ li.slick-active::marker {
         margin-right: 25px;
     }
     .copyright {
+        @media(max-width: 767px) {
+            text-align: center;
+        }
         .realization {
             text-align: end;
+            @media(max-width: 767px) {
+                text-align: center;
+            }
         }
         a {
             display: inline;

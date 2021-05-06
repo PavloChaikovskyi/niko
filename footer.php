@@ -1,22 +1,18 @@
 <footer class="footer">
     <div class="container content">
         <div class="row mx-0">
-            <a href="#intro" class="footer__link logo col-md-3">
+            <a href="#intro" class="footer__link logo col-xl-3">
                 <img src="<?php the_field('footer_logo_image', 'options') ?>" alt="" class="footer__logo">
             </a>
 
-            <a href="<?php the_field('company_adress_link', 'options') ?>" class="
-                col-md-3
-                footer__link
-                adress
-                row
-                mx-0">
+            <a href="<?php the_field('company_adress_link', 'options') ?>"
+                class="col-xl-3 col-md-4 footer__link footer__column adress row mx-0">
                 <img src="<?php the_field('company_adress_icon', 'options') ?>" alt=""
                     class="adress__icon footer__icon">
                 <p class="adress__text link__text"><?php the_field('company_adress_text', 'options') ?></p>
             </a>
 
-            <div class="col-md-3">
+            <div class="col-xl-3 col-md-4 footer__column">
                 <a href="tel:<?php the_field('company_phone_number_without_spaces', 'options') ?>"
                     class="footer__link phone">
                     <img src="<?php the_field('company_number_icon', 'options') ?>" alt=""
@@ -29,7 +25,7 @@
                     <p class="link__text mail__text"><?php the_field('company_mail', 'options') ?></p>
                 </a>
             </div>
-            <div class="col-md-3">
+            <div class="col-xl-3 col-md-4 footer__column">
                 <a href="<?php the_field('rodo_link', 'options') ?>"
                     class="rodo footer__link"><?php the_field('rodo_text', 'options') ?></a>
                 <a href="<?php the_field('privacy_policy_link', 'options') ?>" class="privacy-policy footer__link">
