@@ -217,12 +217,12 @@ $('.brands__slider').slick({
     <div class="container-fluid">
         <h2 class="section__title about__title white"><?php the_field('about_us_title') ?></h2>
         <h3 class="section__subtitle about__subtitle white"><?php the_field('about_us_subtitle') ?></h3>
-        <div class="row mx-0">
-            <div class="col-md-7 about__content">
+        <div class="row  mx-0">
+            <div class="col-lg-7 about__content">
                 <h3 class="content__title"><?php the_field('about_content_title') ?></h3>
                 <p class="content__text"><?php the_field('about_content_description') ?></p>
             </div>
-            <div class="col-md-5">
+            <div class="col-lg-5 img__wrap">
                 <img src="<?php the_field('about_img') ?>" alt="" class="about__img">
             </div>
         </div>

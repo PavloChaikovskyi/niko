@@ -369,7 +369,7 @@ section {
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
     @media(max-width: 1500px) {
-        padding-top: 5rem;
+        padding-top: 8rem;
         padding-bottom: 5rem;
     }
 }
@@ -1112,6 +1112,9 @@ li.slick-active::marker {
             background-position: center;
             color: transparent;
             z-index: 99;
+            @media(max-width: 991px) {
+                display: none!important;
+            }
         }
         .slick-next {
             position: absolute;
@@ -1129,13 +1132,16 @@ li.slick-active::marker {
             background-position: center;
             color: transparent;
             z-index: 99;
+            @media(max-width: 991px) {
+                display: none!important;
+            }
         }
         .slick-slide {
             margin: 0 27px;
           }
           /* the parent */
           .slick-list {
-            margin: 0 -27px;
+            margin: 0 0;
           }
         
     }
@@ -1149,19 +1155,43 @@ li.slick-active::marker {
 
             }
             &__subtitle {
-
                 text-align: center;
                 font-size: 1rem;
             }
             &__img {
                 max-width: 100%;
+                padding-left: 4vw;
+                @media(max-width: 991px) {
+                    padding-left: 0;
+                    max-width: 80%;
+                }
+            }
+            &__content {
+                padding-left: 8vw;
+                padding-right: 4vw;
+                @media(max-width: 991px) {
+                    margin-bottom: 3rem;
+                    text-align: center;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+            .img__wrap{
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
             .content {
+
                 &__title {
                     padding-top: 7rem;
                     margin-bottom: 3rem;
                     font-size: 1.8rem;
                     font-weight: 700;
+                    @media(max-width: 991px) {
+                        padding-top: 3rem;
+
+                    }
 
                 }
                 &__text {
