@@ -391,7 +391,8 @@ section {
     padding: 1.25rem 1.5rem;
     transition: .3s;
     width: fit-content;
-    background: radial-gradient(circle, rgba(13, 68, 105, 1) 0%, rgba(72, 160, 78, 1) 100%);
+    // background: radial-gradient(circle, rgba(13, 68, 105, 1) 0%, rgba(72, 160, 78, 1) 100%);
+    background-image: radial-gradient(circle, #0d4469, #005e7e, #007780, #008d6d, #48a04e);
     border-radius: 25px;
     min-width: 200px;
     &:hover {
@@ -499,7 +500,8 @@ li.slick-active::marker {
 
 
 .intro {
-    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(74, 80, 94, 1) 0%, rgba(30, 30, 42, 1) 100%);
+    // background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(74, 80, 94, 1) 0%, rgba(30, 30, 42, 1) 100%);
+     background-image: radial-gradient(circle, #5c6373, #585f6f, #555c6b, #515867, #4e5563, #494f5d, #434956, #3e4350, #363946, #2e303d, #262733, #1e1e2a);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -591,6 +593,8 @@ li.slick-active::marker {
                 position: absolute;
                 opacity: 0;
                 visibility: hidden;
+                height: 100px;
+                object-fit: contain;
             }
         }
         &__name {
@@ -603,7 +607,7 @@ li.slick-active::marker {
             position: absolute;
             opacity: 0;
             visibility: hidden;
-            top: 100px;
+            top: 120px;
             width: calc(100% - 30px);
         }
     }
